@@ -1,0 +1,29 @@
+mov r0,0x100
+mov r1,0x200
+mov r2,0x300
+mov r3,0x80
+
+mov r4,r0
+mov r5,r1
+mov r6,r2
+mov r7,r3
+
+mov r8,[r1]
+mov [r9],r2
+
+cmp r0,r1
+jmp 3072 (pc+=3076)
+ja 0 (pc+=4)
+jb 0 (pc+=4)
+je 0 (pc+=4)
+
+add r10,r0
+sub r11,r3
+and r2,r1
+or r1,r2
+xor r0,r0
+shl r3,12
+shr r0,0
+jmp -23552
+mov r0,0
+mov r0,r0
